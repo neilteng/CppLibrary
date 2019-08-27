@@ -1,6 +1,8 @@
 // version 1
+//complexity: ave :O(n); worst case: O(nm)
 
-In the following function KR all the multiplications by 2 are implemented by shifts. Furthermore, the computation of the modulus function is avoided by using the implicit modular arithmetic given by the hardware that forgets carries in integer operations. So, q is chosen as the maximum value for an integer.
+//In the following function KR all the multiplications by 2 are implemented by shifts.
+// Furthermore, the computation of the modulus function is avoided by using the implicit modular arithmetic given by the hardware that forgets carries in integer operations. So, q is chosen as the maximum value for an integer.
 
 #define REHASH(a, b, h) ((((h) - (a)*d) << 1) + (b))
 
