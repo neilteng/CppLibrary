@@ -1,3 +1,7 @@
+//char_num:26
+//prime_num:5123 -- the larger the less conflic.
+// We can use has function: [CHAR_1*26^(len_pat-1)+CHAR_2*26^(len_pat-2)+...+CHAR_n*26^(len_pat-n)]%prime_number
+
 // version 1
 //complexity: ave :O(n); worst case: O(nm)
 
