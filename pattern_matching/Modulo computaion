@@ -1,0 +1,9 @@
+# Modular addition and subtraction
+## (A + B) mod C = (A mod C + B mod C) mod C
+## (A - B) mod C = (A mod C - B mod C) mod C
+
+# Modular multiplication
+## (A * B) mod C = (A mod C * B mod C) mod C
+
+# Modular exponentiation
+## A^B mod C = ( (A mod C)^B ) mod C
