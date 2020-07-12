@@ -42,6 +42,10 @@ public class SubstringSearch {
      * Time/space complexity is O(size of pattern)
      */
     private int[] computeTemporaryArray(char pattern[]){
+        /*
+        The value in the lps means that when the next element in the pattern miss-match with the search string
+        which will be the index we are going too check/compare in the pattern with the current value in the search string.
+        */
         int [] lps = new int[pattern.length];
         int index =0;
         for(int i=1; i < pattern.length;){
@@ -51,6 +55,11 @@ public class SubstringSearch {
                 i++;
             }else{
                 if(index != 0){
+                    /* actually, this backtracking can be view as we are comparing a sub string (start from the closest zero with this mis-match)
+                    with the pattern string itself.
+                    i.e. we have a mismatch, so we see the value in previous index in lps, which tells us,
+                    where should we start to compare again with current value.(this can go sevaral time if we again have mismatch.)
+                    */
                     index = lps[index-1];
                 }else{
                     lps[i] =0;
